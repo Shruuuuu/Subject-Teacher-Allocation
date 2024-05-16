@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Details</title>
+	<style type="text/css">
+		body{
+			background-image: url("Images/background.jpg");
+			background-size: cover;
+		}
+		.Details{
+			background: #99ff33;
+			border-radius: 25px;
+			width: 500px;
+			top: 60%;
+			left: 30%;
+			transform: translate(-50%, -50%);
+			position: absolute;
+		}
+		.Details h1{
+			font-size: 40px;
+			color: #000000;
+		}
+		.Details p{
+			color: #000000;
+			font-size: 24px;
+			margin: 15px 10px;
+
+		}
+		.Details select{
+			font-size: 12px;
+			width: 75%;
+			padding: 15px 10px;
+			border: 5;
+			outline: none;
+			border-radius: 10px;
+		}
+		.Details option{
+			font-size: 15px;
+		}
+		.Details input{
+			font-size: 12px;
+			width: 70%;
+			padding: 15px 10px;
+			border: 5;
+			outline: none;
+			border-radius: 15px;
+		}
+		.Details button{
+		    background-color: yellow;
+			font-size: 18px;
+			font-weight: bold;
+			margin: 20px 0;
+			padding: 10px 15px;
+			width: 30%;
+			border-radius: 15px;
+			color: black;
+		}
+	</style>
+</head>
+<body>
+	<div class="Details">
+		<center>
+		<h1> New Registration </h1>
+		<hr color="red" size="05px">
+			<form action="Connection.php" method="post" id="form" autocomplete="off">
+				<p>Full Name:</p>
+				<input id="fname" type="text" name="FullName" required> <br>
+				<p>Email ID:</p>
+				<input id="eid" type="text" name="Eid" required>
+				<p>Mobile No.:</p>
+				<input id="mno" type="text" name="Mono" required>
+				<p>Username:</p>
+				<input id="exp" type="text" name="Username" required>
+				<p>Password:</p>
+				<input id="exp" type="text" name="Password" required>
+				<p>Confirm Password:</p>
+				<input id="exp" type="text" name="Cpassword" required><br> <br>
+				<button id="submit" type="submit" name="submit">Submit</button>
+			</form>
+		</center>
+	</div>
+</body>
+</html>

@@ -1,0 +1,94 @@
+* {
+	padding: 0;
+	margin: 0;
+	font-family: sans-serif;
+}
+
+body{
+    background-image: url("Images/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.Admin-Login{
+	width: 500px;
+	top: 55%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	position: absolute;
+	color: #fff;
+}
+
+.Admin-Login h1{
+	font-size: 40px;
+	text-align: center;
+	text-transform: uppercase;
+	margin: 40px 0;
+    color: yellow;
+}
+
+.Admin-Login p{
+	font-size: 20px;
+	margin: 15px 0;
+}
+
+.Admin-Login input{
+	font-size: 16px;
+	width: 100%;
+	padding: 15px 10px;
+	border: 0;
+	outline: none;
+	border-radius: 15px;
+}
+
+.Admin-Login button{
+	font-size: 18px;
+	font-weight: bold;
+	margin: 20px 0;
+	padding: 10px 15px;
+	width: 50%;
+	border-radius: 15px;
+    background-color: limegreen;
+    color: white;
+}
+.Staff-Login{
+	width: 500px;
+	top: 55%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	position: absolute;
+	color: #fff;
+}
+
+.Staff-Login h1{
+	font-size: 40px;
+	text-align: center;
+	text-transform: uppercase;
+	margin: 40px 0;
+    color: yellow;
+}
+
+.Staff-Login p{
+	font-size: 20px;
+	margin: 15px 0;
+}
+
+.Staff-Login input{
+	font-size: 16px;
+	width: 100%;
+	padding: 15px 10px;
+	border: 0;
+	outline: none;
+	border-radius: 15px;
+}
+
+.Staff-Login button{
+	font-size: 18px;
+	font-weight: bold;
+	margin: 20px 0;
+	padding: 10px 15px;
+	width: 50%;
+	border-radius: 15px;
+    background-color: limegreen;
+    color: white;
+}

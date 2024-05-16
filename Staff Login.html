@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Staff Login</title>
+	<link rel ="stylesheet" type="text/css" href="Style.css">
+</head>
+<body>
+	<dev class="Staff-Login">
+		<h1> Staff Login </h1>
+		<hr> <hr> <br>
+		<form action="C:/xampp/htdocs/Subject/Details Form.html" name="myform" onsubmit="return login()">
+			<p> User Name </p>
+			<input type="text" name="username" placeholder="Username">
+			<p> Password </p>
+			<input type="password" name="password" placeholder="Password">
+				<button type="submit" value="login">Login</button>
+		</form>
+	</dev>
+
+	<script type="text/javascript">
+		function login()
+		{
+			var username=document.myform.username.value;  
+			var password=document.myform.password.value;  
+  
+			if (username==null || username=="")
+			{  
+				alert("Name can't be blank");  
+  				return false;  
+			}
+			else if(password.length<6)
+			{
+  				alert("Password must be at least 6 characters long.");  
+  				return false;  
+  			}
+
+  			if(username == "Staff" && password == "123456")
+  			{
+  				alert("Login Successful");
+  			}
+  			else
+  			{
+  				alert("Invalid Credentials");
+  				return false;
+  			}
+		}
+    </script>
+
+</body>
+</html>

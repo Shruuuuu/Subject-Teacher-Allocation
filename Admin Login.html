@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Admin Login</title>
+	<link rel ="stylesheet" type="text/css" href="Style.css">
+	<script type="Admin.js"></script>
+</head>
+<body>
+	<div id="login-error-msh-holder">
+		<p id="login-error-msg">Invalid Username or Password</p>
+	</div>
+	<div class="Admin-Login">
+		<h1> Admin Login </h1>
+		<hr> <hr> <br>
+		<form action="Allocate.html" name="myform" onsubmit="return login()">
+			<p> User Name </p>
+			<input type="text" name="username" placeholder="Username">
+			<p> Password </p>
+			<input type="password" name="password" placeholder="Password">
+				<button type="submit" value="login">Login</button>
+		</form>
+	</div>
+	
+	<script type="text/javascript">
+		function login()
+		{
+			var username=document.myform.username.value;  
+			var password=document.myform.password.value;  
+  
+			if (username==null || username=="")
+			{  
+				alert("Name can't be blank");  
+  				return false;  
+			}
+			else if(password.length<6)
+			{
+  				alert("Password must be at least 6 characters long.");  
+  				return false;  
+  			}
+
+  			if(username == "Admin" && password == "123456")
+  			{
+  				alert("Login Successful");
+  			}
+  			else
+  			{
+  				alert("Invalid Credentials");
+  				return false;
+  			}
+		}
+    </script>
+
+</body>
+</html>

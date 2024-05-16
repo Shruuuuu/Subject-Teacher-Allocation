@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Details</title>
+	<style type="text/css">
+		body{
+			background-image: url("G:/Projects/Web/Subject Allocation/Images/background.jpg");
+			background-size: cover;
+		}
+		.Details{
+			background: #ffff33;
+			border-radius: 25px;
+			width: 500px;
+			top: 50%;
+			left: 30%;
+			transform: translate(-50%, -50%);
+			position: absolute;
+			color: #fff;
+		}
+		.Details h1{
+			font-size: 40px;
+			color: #000000;
+		}
+		.Details p{
+			color: #000000;
+			font-size: 24px;
+			margin: 15px 10px;
+
+		}
+		.Details select{
+			font-size: 12px;
+			width: 75%;
+			padding: 15px 10px;
+			border: 5;
+			outline: none;
+			border-radius: 10px;
+		}
+		.Details option{
+			font-size: 15px;
+		}
+		.Details input{
+			font-size: 12px;
+			width: 70%;
+			padding: 15px 10px;
+			border: 5;
+			outline: none;
+			border-radius: 15px;
+		}
+		.Details button{
+		    background-color: limegreen;
+			font-size: 18px;
+			font-weight: bold;
+			margin: 20px 0;
+			padding: 10px 15px;
+			width: 30%;
+			border-radius: 15px;
+			color: white;
+		}
+	</style>
+</head>
+<body>
+	<div class="Details">
+		<center>
+		<h1> Enter Your Details </h1>
+		<hr color="red" size="05px">
+			<form action="C:/xampp/htdocs/Subject/Connect.php" method="post" id="form" autocomplete="off">
+				<p>Full Name:</p>
+				<input id="fname" type="text" name="FullName" required> <br>
+				<p>Primary Subject:</p>
+				<select id="input" onchange="getSub()" name="PrimarySubject" required>
+            		<option>---Select---</option>
+            		<option>JAVA</option>
+            		<option>DBMS</option>
+            		<option>WEB</option>
+        		</select>
+				<p>Secondary Subject:</p>
+				<select id="output" name="SecondarySubject" required>
+					<option></option>
+				</select>
+				<p>Experience:</p>
+				<input id="exp" type="text" name="Experience" required> <br> <br>
+				<button id="submit" type="submit" name="submit">Submit</button>
+			</form>
+		</center>
+	</div>
+
+	<script>
+        function getSub()
+            {
+                var s1 =document.getElementById("input").value;
+                if(s1==="JAVA")
+                {
+                    var arr=["---Select---","DBMS","WEB"];	
+                }
+                else if(s1==="DBMS")
+                {
+                    var arr=["---Select---","JAVA","WEB",];
+                }
+             	else if(s1==="WEB")
+                {
+                    var arr=["---Select---","JAVA","DBMS",];
+                }
+
+                var s2="";
+             
+                for(i=0;i<arr.length;i++)
+                {
+                    s2=s2+"<option value="+arr[i]+">"+arr[i]+"</option>";
+                }
+                document.getElementById("output").innerHTML=s2;
+            }
+    </script>
+
+</body>
+</html>
